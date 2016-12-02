@@ -1,0 +1,39 @@
+Thread 0xffc04c98
+
+  locals:
+
+Thread 0xffc04d00
+
+  locals:
+
+Thread 0xffc04d68
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:135)
+  at java.lang.ref.ReferenceQueue.remove()Ljava/lang/ref/Reference; (ReferenceQueue.java:151)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Finalizer.java:209)
+
+  locals:
+    objectId=0xffc04de8, line=1
+    objectId=0xffc04dd8, line=1
+    objectId=0xffc04de8, line=2
+    objectId=0xffc04d68, line=3
+    objectId=0xffc04e08, line=3
+
+Thread 0xffc04e18
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.Object.wait()V (Object.java:503)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Reference.java:133)
+
+  locals:
+    objectId=0xffc04e80, line=1
+    objectId=0xffc04e18, line=2
+    objectId=0xffc04e80, line=2
+
+Thread 0xffc04fc8
+  at java.lang.OutOfMemoryError.<init>()V (OutOfMemoryError.java:48)
+  at com.bjsxt.base001.Test03.main([Ljava/lang/String;)V (Test03.java:14)
+
+  locals:
+    objectId=0xffc04e90, line=1
+    objectId=0xffc04ea0, line=1
+
