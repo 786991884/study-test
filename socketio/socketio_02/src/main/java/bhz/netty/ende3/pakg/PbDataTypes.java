@@ -122,7 +122,6 @@ public final class PbDataTypes {
             }
         });// GMT +8 yyMMddHHmmss
         register(TYPE_LIST, List.class, new JsonStringAdapter<>(List.class));
-        // TODO how we can resolve object type?
         register(TYPE_OBJECT, Object.class, new JsonStringAdapter<>(Object.class));
         register(TYPE_MAP, Map.class, new JsonStringAdapter<>(Map.class));
     }

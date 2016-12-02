@@ -20,7 +20,6 @@ public class ConnectionCloseEventSourceCallback implements ConnectionCloseCallba
     public void connectionClose(ClientConnection connection) {
         try {
             eventHub.listen(ClientDisconnectedEvent.builder()
-                    //TODO right cause we do not known it in this context
                     .cause(ClientDisconnectedEvent.Cause.SERVER_CLOSE)
                     .connectionId(connection.getId())
                     .build());

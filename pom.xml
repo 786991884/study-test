@@ -22,6 +22,7 @@
         <module>redis</module>
         <module>rocketmq</module>
         <module>storm</module>
+        <module>http-client</module>
     </modules>
     <name>study-test</name>
     <url>http://maven.apache.org</url>
@@ -112,6 +113,11 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpmime</artifactId>
                 <version>4.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpasyncclient</artifactId>
+                <version>4.1.2</version>
             </dependency>
             <dependency>
                 <groupId>org.hyperic</groupId>

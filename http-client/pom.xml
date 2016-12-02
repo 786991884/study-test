@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>study-test</artifactId>
+        <groupId>com.xubh.study</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <!--# httpclientUtil
+    该项目其实有3个工具类：
+      1.基于HttpClient-4.4.1封装的一个工具类；
+      2.基于HttpAsycClient-4.1封装的异步HttpClient工具类；
+      3.javanet包下面是基于jdk自带的UrlConnection进行封装的。
+
+    前2个工具类支持插件式配置Header、插件式配置httpclient对象，这样就可以方便地自定义header信息、配置ssl、配置proxy等。
+    第三个虽然支持代理、ssl，但是并没有把代理ssl等进行抽象。
+
+    在test包里还有各种测试demo。
+    -->
+    <artifactId>http-client</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
+
+</project>
