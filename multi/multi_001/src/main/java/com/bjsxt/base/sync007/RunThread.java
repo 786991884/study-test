@@ -11,7 +11,9 @@ public class RunThread extends Thread{
 		System.out.println("进入run方法..");
 		int i = 0;
 		while(isRunning == true){
+			i++;
 			//..
+			//System.out.println(i++);
 		}
 		System.out.println("线程停止");
 	}

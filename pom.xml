@@ -6,10 +6,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>struts2-test</module>
-        <module>hibernate-test</module>
         <module>spring-test</module>
-        <module>jsp-test</module>
         <module>web-test</module>
         <module>multi</module>
         <module>disruptor</module>
@@ -62,12 +59,6 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.27</version>
-            </dependency>
-            <!-- 加入fastjson依赖包 -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.5</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.struts.xwork</groupId>
@@ -135,11 +126,11 @@
                 <artifactId>commons-logging</artifactId>
                 <version>1.2</version>
             </dependency>
-            <dependency>
+           <!-- <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
                 <version>2.5.0</version>
-            </dependency>
+            </dependency>-->
 
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -302,11 +293,6 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.curator</groupId>
-                <artifactId>curator-recipes</artifactId>
-                <version>3.2.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.curator</groupId>
                 <artifactId>curator-client</artifactId>
                 <version>3.2.1</version>
             </dependency>
@@ -348,11 +334,6 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
-                <version>4.1.9.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
                 <version>4.1.9.RELEASE</version>
             </dependency>
             <dependency>
