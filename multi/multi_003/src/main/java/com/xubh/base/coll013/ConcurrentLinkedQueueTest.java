@@ -38,7 +38,7 @@ public class ConcurrentLinkedQueueTest {
     static class Poll implements Runnable {
         @Override
         public void run() {
-          //while (queue.size()>0) {
+            //while (queue.size()>0) {
             while (!queue.isEmpty()) {
                 System.out.println(queue.poll());
             }

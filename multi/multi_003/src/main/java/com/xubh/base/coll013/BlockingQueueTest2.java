@@ -1,12 +1,5 @@
 package com.xubh.base.coll013;
 
-/**
- * @author Lenovo
- * @date 2016-11-29
- * @modify
- * @copyright
- */
-
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -14,9 +7,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * 多线程模拟实现生产者／消费者模型
- *
- * @author 林计钦
- * @version 1.0 2013-7-25 下午05:23:11
  */
 public class BlockingQueueTest2 {
     /**
