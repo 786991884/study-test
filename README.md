@@ -1,8 +1,8 @@
 # study-test 互联网应用架构相关学习(在生产环境中用到时所做的相关测试)
 ## 1.activemq
-1. activemq 轻量级的消息中间件activemq
-   1.activemq-consumer
-   2.activemq-provider
+1. activemq轻量级的消息中间件
+   1. activemq-consumer
+   2. activemq-provider
 ## 2.disruptor无锁并行框架
 2. distuptor
 ## 3.rpc框架dubbo,dubbox
