@@ -3,32 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>study-test</artifactId>
+        <artifactId>storm</artifactId>
         <groupId>com.xubh.study</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>storm</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>storm01</module>
-        <module>storm02</module>
-        <module>storm03</module>
-        <module>storm04</module>
-        <module>storm05</module>
-        <module>storm06</module>
-        <module>storm07</module>
-    </modules>
+    <artifactId>storm07</artifactId>
     <dependencies>
         <dependency>
-            <groupId>org.apache.storm</groupId>
-            <artifactId>storm-core</artifactId>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

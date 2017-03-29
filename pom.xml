@@ -396,8 +396,8 @@
                     <!-- <username>username</username> -->
                     <!-- <password>password</password> -->
                     <systemProperties>
-                        <JAVA_OPTS>-Xms256m -Xmx512m -XX:MaxPermSize=256m -XX:+PrintGCDetails</JAVA_OPTS>
-                        <CATALINA_OPTS>-Xms1m -Xmx1m -XX:+PrintGCDetails</CATALINA_OPTS>
+                        <!--<JAVA_OPTS>-Xms256m -Xmx512m -XX:MaxPermSize=256m -XX:+PrintGCDetails</JAVA_OPTS>
+                        <CATALINA_OPTS>-Xms1m -Xmx1m -XX:+PrintGCDetails</CATALINA_OPTS>-->
                         <!--<CATALINA_OPTS>-Djava.awt.headless=true -Dfile.encoding=UTF-8
                             -server -Xms512m -Xmx512m
                             -XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m

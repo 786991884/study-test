@@ -1,9 +1,15 @@
 package bhz.redis.test;
 
+import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
-public class testRedis {
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
+
+public class TestRedis {
 
     private static Jedis jedis = new Jedis("192.168.1.101", 6379);
 
@@ -11,7 +17,7 @@ public class testRedis {
      * @param
      */
     @Test
-    public void test() {
+    public void test1() {
 //		jedis.set("sex","man");
 //		System.out.println(jedis);
 //		
@@ -102,4 +108,59 @@ public class testRedis {
         System.out.println(jedis.scard("user1"));//返回集合的元素个数
     }
 
+    @Test
+    public void test() {
+        Jedis jedis = new Jedis("1.1.1.2", 6379);
+//        List<String> list = jedis.mget("name", "age");
+//        list.forEach(System.out::println);
+        final String SYS_USER_TAB = "SYS_USER_TAB";
+        final String SYS_USER_TAB_SEL_AGE_25 = "SYS_USER_TAB_SEL_AGE_25";
+        final String SYS_USER_TAB_SEL_SEX_m = "SYS_USER_TAB_SEL_SEX_m";
+        final String SYS_USER_TAB_SEL_SEX_w = "SYS_USER_TAB_SEL_SEX_w";
+
+        Set<String> userAges = jedis.smembers(SYS_USER_TAB_SEL_AGE_25);
+
+        for (String id : userAges) {
+            String result = jedis.hget(SYS_USER_TAB, id);
+            System.out.println(result);
+
+        }
+        String u1id = UUID.randomUUID().toString();
+        User u1 = new User(u1id, "z1", "20", "w");
+        jedis.sadd(SYS_USER_TAB_SEL_SEX_w, u1id);
+
+
+        String u2id = UUID.randomUUID().toString();
+        User u2 = new User(u2id, "z2", "25", "m");
+        jedis.sadd(SYS_USER_TAB_SEL_SEX_m, u2id);
+        jedis.sadd(SYS_USER_TAB_SEL_AGE_25, u2id);
+
+
+        String u3id = UUID.randomUUID().toString();
+        User u3 = new User(u3id, "z3", "20", "m");
+        jedis.sadd(SYS_USER_TAB_SEL_SEX_m, u3id);
+
+
+        String u4id = UUID.randomUUID().toString();
+        User u4 = new User(u4id, "z4", "21", "m");
+        jedis.sadd(SYS_USER_TAB_SEL_SEX_m, u4id);
+
+
+        String u5id = UUID.randomUUID().toString();
+        User u5 = new User(u5id, "z5", "29", "w");
+        jedis.sadd(SYS_USER_TAB_SEL_SEX_w, u5id);
+        jedis.sadd(SYS_USER_TAB_SEL_AGE_25, u5id);
+
+
+        Map<String, String> map = new HashMap<>();
+        map.put(u1id, JSON.toJSONString(u1));
+        map.put(u1id, JSON.toJSONString(u2));
+        map.put(u3id, JSON.toJSONString(u3));
+        map.put(u4id, JSON.toJSONString(u4));
+        map.put(u5id, JSON.toJSONString(u5));
+
+        jedis.hmset("SYS_USER_TAB", map);
+
+
+    }
 }
