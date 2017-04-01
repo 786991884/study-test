@@ -21,6 +21,7 @@
         <module>storm</module>
         <module>http-client</module>
         <module>spring-shiro</module>
+        <module>lucene</module>
     </modules>
     <name>study-test</name>
     <url>http://maven.apache.org</url>
