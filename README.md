@@ -12,21 +12,31 @@
    4. dubbox-provider
 5. http-client封装测试
 6. jvm机制调优测试
-7. multi多线程,队列，并发等等测试用例
+7. lucene
+   1. lucene01
+   2. solr01
+   3. solr02
+8. multi多线程,队列，并发等等测试用例
    1. multi_001
    2. multi_002
    3. multi_003
    4. multi_004
    5. multi_005
    6. multi_006
-8. redis测试
-9. rocketmq测试
+9. redis测试
+10. rocketmq测试
    1. rocketmq-transaction-balance
    2. rocketmq-transaction-pay
-1. socketio,bio,nio,aio,netty等等详细测试用例
+11. socketio,bio,nio,aio,netty等等详细测试用例
    1. socketio_01
    2. socketio_02
    3. socketio_03
-2. spring-shiro权限框架简单测试
-3. storm入门示例
-4. zookeeper测试，包括zkclient和curator框架测试
+12. spring-shiro权限框架简单测试
+13. storm入门示例
+    1. storm01
+    2. storm02
+    3. storm03
+    4. storm04
+    5. storm05
+    6. storm06
+14. zookeeper测试，包括zkclient和curator框架测试
