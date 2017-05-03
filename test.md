@@ -140,7 +140,8 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 |2|`![][foryou]`|![][foryou]
 
 注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
->在文末有foryou的定义：
+>在文末有foryou的定义:
+
 ```
 [foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ```
@@ -263,11 +264,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 代码高亮
 ----------
 在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。
-```Java
-public class Test{
-    public static void main(String[] args){} //Java
-}
-```
+
 ```c
 int main(int argc, char *argv[]) //C
 ```
